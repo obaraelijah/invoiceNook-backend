@@ -8,6 +8,8 @@ import connectionToDB from "./config/connectDB.js";
 import { morganMiddleware, systemLogs } from "./utils/Logger.js";
 import mongoSanitize from "express-mongo-sanitize";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
+import { apiLimiter } from "./middleware/apiLimiter.js";
+
 
 await connectionToDB();
 
