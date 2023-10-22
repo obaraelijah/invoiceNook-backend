@@ -9,7 +9,7 @@ cloudinary.config({
 });
 
 const cloudinaryUploader = async function uploadToCloudinary(localFilePath) {
-	const mainFolderName = "invoiceNook";
+	const mainFolderName = "merninvoice";
 
 	const filePathOnCloudinary = mainFolderName + "/" + localFilePath;
 

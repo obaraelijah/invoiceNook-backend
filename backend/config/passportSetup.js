@@ -17,7 +17,7 @@ const googleAuth = () => {
 			},
 			(accessToken, refreshToken, profile, done) => {
 				// TODO: remove this console in production
-				console.log(profile);
+				// console.log(profile);
 
 				User.findOne({ googleID: profile.id }).then((user) => {
 					if (!user) {
