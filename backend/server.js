@@ -27,7 +27,7 @@ app.use(mongoSanitize());
 app.use(morganMiddleware)
 
 app.get("/api/v1/test", (req, res) => {
-	res.json({ Hi: "Welcome to the Invoice App" });
+	res.json({ Hi: "Welcome to the InvoiceNook App" });
 });
 
 
